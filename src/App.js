@@ -1,23 +1,37 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
 
+/* Component Modules */
+import Header from './components/Header';
+import FeaturedItem from './components/FeaturedItem';
+import LatestNewsItem from './components/LatestNewsItem';
+
+/* Article Data */
+import featuredArticles from './data/featuredArticles.js';
+import latestNews from './data/latestNews.js';
+
 function App() {
+  const featArticles = [...featuredArticles];
+  const newsArticles = [...latestNews];
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <div className='featured-div'>
+        {featArticles.map((entry, index) => 
+          <FeaturedItem key={index} data={entry} />
+        )}
+      </div>
+      <div className='latest-news-div'>
+        <h1 className='section-header'>Latest News</h1>
+        <div className='latest-news-grid'>
+          {newsArticles.map((entry, index) => 
+            <LatestNewsItem key={index} data={entry} />
+          )}
+        </div>
+      </div>
+
+
     </div>
   );
 }
