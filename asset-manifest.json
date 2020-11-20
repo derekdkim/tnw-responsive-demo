@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.b5d30713.chunk.css",
+    "main.js": "/static/js/main.02500737.chunk.js",
+    "main.js.map": "/static/js/main.02500737.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.28569bef.js",
+    "runtime-main.js.map": "/static/js/runtime-main.28569bef.js.map",
+    "static/js/2.f4871ed1.chunk.js": "/static/js/2.f4871ed1.chunk.js",
+    "static/js/2.f4871ed1.chunk.js.map": "/static/js/2.f4871ed1.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.b5d30713.chunk.css.map": "/static/css/main.b5d30713.chunk.css.map",
+    "static/js/2.f4871ed1.chunk.js.LICENSE.txt": "/static/js/2.f4871ed1.chunk.js.LICENSE.txt",
+    "static/media/deals.f6eff824.jpg": "/static/media/deals.f6eff824.jpg",
+    "static/media/index.css": "/static/media/tnw.13dd4c33.svg",
+    "static/media/magician_robot.3f956386.jpg": "/static/media/magician_robot.3f956386.jpg",
+    "static/media/milan-bus.00eb8eb8.jpg": "/static/media/milan-bus.00eb8eb8.jpg",
+    "static/media/zoom.99ed2ecf.jpg": "/static/media/zoom.99ed2ecf.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.28569bef.js",
+    "static/js/2.f4871ed1.chunk.js",
+    "static/css/main.b5d30713.chunk.css",
+    "static/js/main.02500737.chunk.js"
+  ]
+}
