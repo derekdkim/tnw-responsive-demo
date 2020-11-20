@@ -1,0 +1,134 @@
+/* General */
+.featured-div {
+  height: 75vh;
+  max-height: 560px;
+  margin: 4px;
+}
+
+.featured-div article {
+  float: left;
+  box-sizing: border-box;
+  padding: 4px;
+}
+
+.featured-item {
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  overflow: hidden;
+  position: relative;
+}
+
+.background-gradient-filter {
+  background: rgba(0,0,0,.25) url('../../img/image-gradient.png') no-repeat;
+  background-size: 100% 100%;
+  z-index: 2;
+  height: 100%;
+}
+
+.featured-item-header {
+  position: absolute;
+  bottom: 4px;
+  left: 4px;
+  right: 4px;
+  color: white;
+}
+
+.featured-item-header span {
+  font-size: 14px;
+}
+
+.featured-item-header .title {
+  margin: 0 0 0.25em 0;
+}
+
+.misc-info-div {
+  color: hsla(0,0%,100%,.6);
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.misc-info-div span {
+  margin-right: 6px;
+}
+
+/* Media Queries */
+@media (max-width: 767px) {
+  .featured-div article {
+    height: calc(100%/3);
+    width: 100%;
+  }
+
+  .featured-item-header {
+    padding: 14px 12px;
+  }
+
+  .featured-item-header .title {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .featured-div article {
+    height: 50%;
+    width: calc(100%/3);
+  }
+
+  .featured-div article:first-child {
+    height: 100%;
+    width: calc(200%/3);
+  }
+
+  .featured-item-header {
+    padding: 16px 12px;
+  }
+
+  .featured-item-header .title {
+    font-size: 20px;
+  }
+  
+  .featured-item-header.main-article .title {
+    font-size: 40px;
+  }
+
+  .misc-info-div .shared {
+    display: none;
+  }
+
+  .misc-info-div.main-article .shared {
+    display: inline;
+  }
+}
+
+@media (min-width: 1024px) {
+  .cover-logo {
+    background-image: url('../../img/tnw.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 24px;
+    left: 24px;
+    right: 24px;
+    max-width: 50%;
+    height: 100%;
+    max-height: 112px;
+    z-index: 3;
+  }
+
+  .featured-item-header {
+    padding: 14px 20px;
+  }
+
+  .featured-item-header .title {
+    font-size: 28px;
+  }
+  
+  .featured-item-header.main-article .title {
+    font-size: 56px;
+  }
+
+  .misc-info-div .shared {
+    display: inline;
+  }
+}

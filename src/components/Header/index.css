@@ -1,0 +1,147 @@
+/* General */
+
+.header {
+  width: 100%;
+  display: flex;
+  background-color: green;
+}
+
+/* TNW Logo */
+.logo-div {
+  background-color: black;
+  width: 106px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-div img {
+  width: 66px;
+}
+
+.logo-div:hover {
+  background-image: url('../../img/home.gif');
+}
+
+.nav-div {
+  flex: 1;
+}
+
+/* Top Nav Bar */
+.misc-nav-div {
+  background: #131313;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 32px;
+  max-height: 32px;
+  color: hsla(0,0%,100%,.6);
+}
+
+.misc-nav {
+  height: 32px;
+  display: flex;
+}
+
+.left-list {
+  display: flex;
+
+}
+
+.misc-left-list li {
+  margin-left: 12px;
+}
+
+.misc-left-list li {
+  margin-left: 12px;
+}
+
+.misc-left-list li:first-child {
+  margin-left: 20px;
+  color: white;
+}
+
+.right-list {
+  display: flex;
+  margin-left: auto;
+}
+
+.right-list li {
+  margin-right: 12px;
+}
+
+.right-list li:last-child {
+  margin-right: 20px;
+}
+
+/* Bottom Nav */
+.main-nav-div {
+  display: flex;
+  background-color: white;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.main-nav {
+  text-transform: uppercase;
+  font-family: 'shentox-5', sans-serif;
+  color: #aaa;
+}
+
+.main-nav li {
+  height: 48px;
+  display: flex;
+  align-items: center;
+  padding-left: 12px;
+  padding-right: 12px;
+  font-size: 80%;
+}
+
+.main-nav li:first-child {
+  padding-left: 20px;
+}
+
+.icon-collection {
+  margin-left: auto;
+  display: flex;
+}
+
+.icon-div {
+  height: 48px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.search-icon {
+  /* -webkit-transform: rotate(45deg); 
+  -moz-transform: rotate(45deg); 
+  -o-transform: rotate(45deg); */
+  transform: rotate(45deg);
+  font-size: 1.5em;
+  color: #aaa;
+}
+
+.hamburger-menu-icon {
+  color: #f42;
+}
+
+/* ------- Responsive Media Queries ------ */
+/* Mobile */
+@media (max-width: 768px) {
+  .misc-nav-div {
+    display: none;
+  }
+
+  .main-nav {
+    display: none;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .logo-div {
+    display: none;
+  }
+}
+

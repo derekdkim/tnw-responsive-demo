@@ -1,3 +1,7 @@
+import magician from '../img/magician_robot.jpg';
+import zoom from '../img/zoom.jpg';
+import bus from '../img/milan-bus.jpg';
+
 const featuredArticles = [
   {
     category: 'TECH',
@@ -5,7 +9,7 @@ const featuredArticles = [
     author: 'Tristan Greene',
     time: '36 minutes ago',
     shared: 7,
-    imgURL: '../img/magician_robot.jpg'
+    imgURL: magician
   },
   {
     category: 'GEAR',
@@ -13,7 +17,7 @@ const featuredArticles = [
     author: 'Napier Lopez',
     time: '4 hours ago',
     shared: 17,
-    imgURL: '../img/zoom.jpg'
+    imgURL: zoom
   },
   {
     category: 'INSIGHTS',
@@ -21,7 +25,7 @@ const featuredArticles = [
     author: 'Matthew Beedham',
     time: '9 hours ago',
     shared: 14,
-    imgURL: '../img/milan-bus.jpg'
+    imgURL: bus
   }
 ];
 

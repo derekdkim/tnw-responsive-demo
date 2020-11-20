@@ -1,6 +1,21 @@
 body {
   margin: 0;
-  font-family: 'ARS Maquette', 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'ARS Maquette Pro Light', Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: rgba(0, 0, 0, 0.01);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+i {
+  font-style: normal;
+}
+
+div, article, section {
+  box-sizing: border-box;
 }

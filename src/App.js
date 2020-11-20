@@ -17,19 +17,19 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <div className='featured-div'>
+      <section className='featured-div'>
         {featArticles.map((entry, index) => 
-          <FeaturedItem key={index} data={entry} />
+          <FeaturedItem key={index} data={entry} index={index} />
         )}
-      </div>
-      <div className='latest-news-div'>
-        <h1 className='section-header'>Latest News</h1>
+      </section>
+      <section className='latest-news-div'>
+        <h1 className='section-header'>Latest news</h1>
         <div className='latest-news-grid'>
           {newsArticles.map((entry, index) => 
             <LatestNewsItem key={index} data={entry} />
           )}
         </div>
-      </div>
+      </section>
 
 
     </div>

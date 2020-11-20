@@ -1,16 +1,21 @@
 import React from 'react';
+import './index.css';
+
+import Logo from '../../img/tnw.svg';
 
 const Header = () => {
   return (
-    <div>
-      <div className='logo-div'></div>
+    <header className='header'>
+      <div className='logo-div'>
+        <img src={Logo} alt='tnw-logo'/>
+      </div>
       <div className='nav-div'>
-        <div className='misc-nav-div'>
+        <div className='misc-nav-div' role='navigation'>
           <nav className='misc-nav'>
-            <ul className='left-list'>
+            <ul className='left-list misc-left-list'>
               <li>News</li>
-              <li>Events</li>
-              <li>Business</li>
+              <li>Events ▾</li>
+              <li>Business ▾</li>
               <li>AMAs</li>
               <li>Spaces</li>
               <li>{'Terms & Conditions'}</li>
@@ -23,7 +28,7 @@ const Header = () => {
             </ul>
           </nav>
         </div>
-        <div className='main-nav-div'>
+        <div className='main-nav-div' role='navigation'>
           <nav className='main-nav'>
             <ul className='left-list'>
                 <li>Latest</li>
@@ -31,12 +36,21 @@ const Header = () => {
                 <li>Plugged</li>
                 <li>Readme</li>
                 <li>Growth Quarters</li>
-                <li>{'Terms & Conditions'}</li>
+                <li>Shift</li>
+                <li>Neural</li>
               </ul>
           </nav>
+          <div className='icon-collection'>
+            <div className='icon-div'>
+              <div className='search-icon'>&#x26B2;</div>
+            </div>
+            <div className='icon-div'>
+              <div className='hamburger-menu-icon'>&#9776;</div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+    </header>
   );
 }
 
