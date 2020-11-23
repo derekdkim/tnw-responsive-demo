@@ -1,5 +1,6 @@
 {
   "name": "tnw-clone",
+  "homepage": "https://derekdkim.github.io/tnw-responsive-demo/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
